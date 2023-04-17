@@ -7,19 +7,19 @@ read user
 # OS
 echo "Select OS:"
 echo "
-	1. Gentoo
-	2. Arch
-	3. Debian
-	4. OpenSuse
-	5. Ubuntu
+  1. Gentoo
+  2. Arch
+  3. Debian
+  4. OpenSuse
+  5. Ubuntu
 "
 read os
 case $os in
-	1) emerge -q app-shells/zsh ;;
-	2) pacman -S zsh --noconfirm ;;
-	3) apt install -y zsh ;;
-	4) zypper in -y zsh ;;
-	5) apt install -y zsh ;;
+  1) emerge -q app-shells/zsh ;;
+  2) pacman -S zsh --noconfirm ;;
+  3) apt install -y zsh ;;
+  4) zypper in -y zsh ;;
+  5) apt install -y zsh ;;
 esac
 
 # Create config
